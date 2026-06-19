@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>791A-BearAndBigBrother.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bd93f9;}
+.s1 { color: #f8f8f2;}
+.s2 { color: #f1fa8c;}
+.s3 { color: #ff79c6;}
+</style>
+</head>
+<body bgcolor="#282a36">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+791A-BearAndBigBrother.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&lt;algorithm&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+<span class="s3">using namespace </span><span class="s1">std;</span>
+<span class="s0">#include </span><span class="s2">&lt;cmath&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;ctype.h&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;string&gt;</span>
+ 
+ 
+<span class="s3">int </span><span class="s1">main() {</span>
+ 
+    <span class="s3">int </span><span class="s1">a, b;</span>
+    <span class="s1">cin &gt;&gt; a &gt;&gt; b;</span>
+    <span class="s3">int </span><span class="s1">counter = </span><span class="s0">0</span><span class="s1">;</span>
+ 
+    <span class="s3">if </span><span class="s1">(b &gt; </span><span class="s0">10</span><span class="s1">) {</span>
+        <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter a number less than 10 for bob&quot;</span><span class="s1">;</span>
+        <span class="s3">return </span><span class="s0">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+ 
+    <span class="s3">if </span><span class="s1">(a &gt; b) {</span>
+ 
+        <span class="s1">cout &lt;&lt;</span><span class="s0">0</span><span class="s1">;</span>
+        <span class="s3">return </span><span class="s0">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+ 
+    <span class="s3">if </span><span class="s1">(a == b) {</span>
+ 
+        <span class="s1">cout &lt;&lt;</span><span class="s0">1</span><span class="s1">;</span>
+        <span class="s3">return </span><span class="s0">0</span><span class="s1">;</span>
+    <span class="s1">}</span>
+ 
+    <span class="s3">while </span><span class="s1">(a &lt;= b) {</span>
+ 
+        <span class="s1">a = a*</span><span class="s0">3</span><span class="s1">;</span>
+        <span class="s1">b = b*</span><span class="s0">2</span><span class="s1">;</span>
+        <span class="s1">counter++;</span>
+ 
+        <span class="s3">if </span><span class="s1">(a &gt; b) </span><span class="s3">break</span><span class="s1">;</span>
+    <span class="s1">}</span>
+ 
+    <span class="s1">cout &lt;&lt; counter;</span>
+ 
+    <span class="s3">return </span><span class="s0">0</span><span class="s1">;</span>
+ 
+<span class="s1">}</span></pre>
+</body>
+</html>
