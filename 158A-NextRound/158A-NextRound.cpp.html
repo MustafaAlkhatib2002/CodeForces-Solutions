@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>158A-NextRound.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bd93f9;}
+.s1 { color: #f8f8f2;}
+.s2 { color: #f1fa8c;}
+.s3 { color: #ff79c6;}
+</style>
+</head>
+<body bgcolor="#282a36">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+158A-NextRound.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+<span class="s3">using namespace </span><span class="s1">std;</span>
+
+<span class="s3">int </span><span class="s1">main() {</span>
+    <span class="s3">int </span><span class="s1">n, k;</span>
+    <span class="s1">cin &gt;&gt; n &gt;&gt; k;</span>
+
+    <span class="s3">int </span><span class="s1">a[</span><span class="s0">50</span><span class="s1">];</span>
+
+    <span class="s3">for </span><span class="s1">(</span><span class="s3">int </span><span class="s1">i = </span><span class="s0">0</span><span class="s1">; i &lt; n; i++)</span>
+        <span class="s1">cin &gt;&gt; a[i];</span>
+
+    <span class="s3">int </span><span class="s1">counter = </span><span class="s0">0</span><span class="s1">;</span>
+
+    <span class="s3">for </span><span class="s1">(</span><span class="s3">int </span><span class="s1">i = </span><span class="s0">0</span><span class="s1">; i &lt; n; i++) {</span>
+        <span class="s3">if </span><span class="s1">(a[i] &gt;= a[k - </span><span class="s0">1</span><span class="s1">] &amp;&amp; a[i] &gt; </span><span class="s0">0</span><span class="s1">)</span>
+            <span class="s1">counter++;</span>
+    <span class="s1">}</span>
+
+    <span class="s1">cout &lt;&lt; counter &lt;&lt; endl;</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
