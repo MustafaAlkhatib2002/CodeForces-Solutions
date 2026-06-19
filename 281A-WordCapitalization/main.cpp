@@ -1,0 +1,29 @@
+#include <algorithm>
+#include <iostream>
+using namespace std;
+#include <cmath>
+#include <ctype.h>
+#include <string>
+
+
+int main() {
+
+    string word;
+    cin >> word;
+
+
+
+        if (islower(word[0])) {
+
+            word[0] = toupper(word[0]);
+        }
+
+
+
+    cout << word << endl;
+
+
+
+    return 0;
+
+}
